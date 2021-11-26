@@ -1,4 +1,4 @@
-Program de desenare raster folosind elementul canvas construit cu vanilla JS, HTML si CSS.
+Program de desenare raster(dedicat pentru utilizarea de pe calculator) folosind elementul canvas construit cu vanilla JS, HTML si CSS.
 Descriere: Permite utilizatorului să deseneze folosind un element de tip canvas și să exporte rezultatul final în format
 raster.
 Exemplu: Microsoft Paint
