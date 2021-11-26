@@ -65,23 +65,23 @@ referintaButonCreion.addEventListener("click", e=> {
         if(referintaButonLinie.disabled === true)
         {
         referintaButonLinie.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
         }
         if(referintaButonDreptunghi.disabled ===true)
         {
             referintaButonDreptunghi.disabled = false;
-            canvas.removeEventListener("mousedown",down);
-            canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-            canvas.removeEventListener("mousemove",move);
+            canvas.removeEventListener("touchstart",down);
+            canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+            canvas.removeEventListener("touchmove",move);
         }
         if(referintaButonElipsa.disabled === true)
         {
             referintaButonElipsa.disabled = false;
-            canvas.removeEventListener("mousedown",down);
-            canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-            canvas.removeEventListener("mousemove",move);
+            canvas.removeEventListener("touchstart",down);
+            canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+            canvas.removeEventListener("touchmove",move);
     
         }
         deseneazaCreion(lineWidth,lineColor);
@@ -103,7 +103,7 @@ down = function(e)
     isDrawing = true;
 }
 
-canvas.addEventListener("mousedown",down);
+canvas.addEventListener("touchstart",down);
 
 move = function(e)
 {
@@ -114,7 +114,7 @@ move = function(e)
       }
 }
 
-canvas.addEventListener("mousemove",move);
+canvas.addEventListener("touchmove",move);
 
 up = function(e)
 {
@@ -126,7 +126,7 @@ up = function(e)
       }
 }
 
-canvas.addEventListener("mouseup",up);
+canvas.addEventListener("touchend",up);
 
 function drawPencil(context, x1, y1, x2, y2,lineWidth,lineColor) 
 { //context.clearRect(0,0,canvas.width,canvas.height);
@@ -198,24 +198,24 @@ referintaButonLinie.addEventListener("click", e => {
     if(referintaButonDreptunghi.disabled ===true)
     {
         referintaButonDreptunghi.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
     }
     if(referintaButonElipsa.disabled === true)
     {
         referintaButonElipsa.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
 
     }
     if(referintaButonCreion.disabled === true)
         {
         referintaButonCreion.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
         }
     deseneazaLinie(lineWidth,lineColor);
 });
@@ -254,7 +254,7 @@ function deseneazaLinie(lineWidth,lineColor)
         isDrawing = true;
         
     }
-    canvas.addEventListener("mousedown",down);
+    canvas.addEventListener("touchstart",down);
     
     move = function(e)
     {
@@ -263,14 +263,14 @@ function deseneazaLinie(lineWidth,lineColor)
         drawLine(ctx,x0,y0,e.offsetX,e.offsetY,lineW,lineC);
         }
     }
-    canvas.addEventListener("mousemove",move);
+    canvas.addEventListener("touchmove",move);
     
     up = function(e){
         isDrawing = false;
         let valoare = new Linie(x0,y0,e.offsetX,e.offsetY,lineW,lineC);
         vectorLinii.push(valoare);
     }
-    canvas.addEventListener("mouseup",up);
+    canvas.addEventListener("touchend",up);
     
     function drawLine(context,x0,y0,x1,y1,lineWidth,lineColor)
     {   context.clearRect(0,0,canvas.width,canvas.height); // curat dreptunghiul canvasului 
@@ -307,23 +307,23 @@ referintaButonDreptunghi.addEventListener("click", e => {
     if(referintaButonLinie.disabled === true)
     {
         referintaButonLinie.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
     }
     if(referintaButonElipsa.disabled === true)
     {
         referintaButonElipsa.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
     }
     if(referintaButonCreion.disabled === true)
         {
         referintaButonCreion.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
         }
     deseneazaDreptunghi(lineWidth,lineColor);
 });
@@ -379,7 +379,7 @@ down = function(e)
     isDrawing = true; 
 }
 
-canvas.addEventListener("mousedown",down);
+canvas.addEventListener("touchstart",down);
 
 move = function(e)
 {
@@ -389,7 +389,7 @@ move = function(e)
     }
 }
 
-canvas.addEventListener("mousemove",move);
+canvas.addEventListener("touchmove",move);
 
 up = function(e)
 {
@@ -398,7 +398,7 @@ up = function(e)
     vectorDreptunghiuri.push(dreptunghi);
 }
 
-canvas.addEventListener("mouseup",up);
+canvas.addEventListener("touchend",up);
 
 
 function drawRectangle(context,x0,y0,x1,y1,lineWidth,lineColor)
@@ -439,23 +439,23 @@ referintaButonElipsa.addEventListener("click", e => {
     if(referintaButonLinie.disabled === true)
     {
         referintaButonLinie.disabled = false;
-        canvas.removeEventListener("mouseup",up);
-        canvas.removeEventListener("mousemove",move);
-        canvas.removeEventListener("mousedown",down);
+        canvas.removeEventListener("touchend",up);
+        canvas.removeEventListener("touchmove",move);
+        canvas.removeEventListener("touchstart",down);
     }
     if(referintaButonDreptunghi.disabled === true)
     {
         referintaButonDreptunghi.disabled = false;
-        canvas.removeEventListener("mouseup",up);
-        canvas.removeEventListener("mousemove",move);
-        canvas.removeEventListener("mousedown",down);
+        canvas.removeEventListener("touchend",up);
+        canvas.removeEventListener("touchmove",move);
+        canvas.removeEventListener("touchstart",down);
     }
     if(referintaButonCreion.disabled === true)
         {
         referintaButonCreion.disabled = false;
-        canvas.removeEventListener("mousedown",down);
-        canvas.removeEventListener("mouseup",up); // daca este cazul scap de event listener-urile create anterior 
-        canvas.removeEventListener("mousemove",move);
+        canvas.removeEventListener("touchstart",down);
+        canvas.removeEventListener("touchend",up); // daca este cazul scap de event listener-urile create anterior 
+        canvas.removeEventListener("touchmove",move);
         }
     deseneazaElipsa(lineWidth,lineColor);
 });
@@ -536,7 +536,7 @@ y1 = e.clientY - rect.top;
 isDown = true;
 }
     
-canvas.addEventListener("mousedown",down);
+canvas.addEventListener("touchstart",down);
 
 
 up = function(e)
@@ -545,7 +545,7 @@ up = function(e)
     let elipsa =  new Elipsa(x1,y1,x2,y2,lineW,lineC);
     vectorElipse.push(elipsa);
 }
-canvas.addEventListener("mouseup",up);
+canvas.addEventListener("touchend",up);
 
 move = function(e)
 {
@@ -563,7 +563,7 @@ if (!isDown) return;
 }
 
 /// draw ellipse from start point
-canvas.addEventListener("mousemove",move);
+canvas.addEventListener("touchmove",move);
 
 function drawEllipse(context,x1, y1, x2, y2,lineWidth,lineColor) {
     context.clearRect(0,0,w,h); // curat canvas 
