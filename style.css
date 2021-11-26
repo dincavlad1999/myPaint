@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222429;
+}
+
+/* Headers */
+
+.header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+   /* font-size: 30px;*/
+    color: #86C232;
+    
+
+}
+
+
+
+.main-container{
+    border: 10px solid black;;
+    width: 75%;
+    height: 10%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3vh;
+    overflow: hidden;
+    
+}
+
+.container {
+    background-color: #474B4F;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Shapes {
+    border: 1px solid black;
+    flex: 33%;
+    border-top: none;
+
+}
+
+.Features {
+    border: 1px solid black;
+    flex:33%;
+    border-top: none;
+}
+
+/*
+.Import-canvas {
+    border: 1px solid black;
+    flex: 33%;
+    border-top: none;
+    
+}*/
+
+.canvas{
+    background-color: #474B4F;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+button {
+    /*font-size: 20px;*/
+    letter-spacing: 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #86C232;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+label{
+    /*font-size: 20px;*/
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+input{
+    background-color: white;
+    
+}
+
+
+button:active{
+    background: #61892F;
+}
+
+button:hover{
+    background: #61892F;
+}
+
+#Raster {
+    position: absolute;
+    top:  2vh;
+    left: 2vw;
+}
+
+#myCanvas{
+    border:none;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.figuri{
+    padding: 1px;
+    margin: 0;
+    background-color: #474B4F;
+    color:#86C232;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+/* RESPONSIVE TYPOGRAPHY */
+html {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+
+    .header{
+        font-size: 30px;
+    }
+    button{
+        font-size: 20px;
+    }
+    label {
+        font-size: 20px;
+    }
+  }

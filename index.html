@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div>
+<p><button type="button" id="Raster">SAVE</button></p> 
+ </div>   
+
+<div class="main-container">   
+
+<div class="container">
+<div class="Shapes">
+    <div class="header">Shapes</div>
+    <p><button type="button" id="ellipse">Oval</button></p>
+    <p><button type="button" id="rectangle">Rectangle</button></p>
+    <p><button type="button" id="line">Line</button></p>
+    <p><button type="button" id="pencil">Pencil Draw</button></p>
+</div>
+<div class="Features">
+    <div class="header">Features</div>
+    <p class="line-color">  
+        <label for="line_color">Line color:</label>
+        <input type="color" id="line_color" value="#000000">
+    </p>
+    <p id="line-width">
+        <label for="line_width">Line width(px):</label>
+        <select id="line_width">
+            <option selected>1</option>
+            <option>3</option>
+            <option>5</option>
+            <option>8</option>
+          </select>  
+    </p>
+    <p class="background-color">
+        <label for="background_color">Background color:</label>
+        <input type="color" id="background_color" value="#ffffff">  
+    </p>
+    <p><button type="button" id="date-figuri">Date figuri</button></p>
+</div>
+<!-- 
+<div class="Import-canvas">
+    <div class="header">Export Canvas</div>
+    <p><button type="button" id="Raster">SAVE IMAGE</button></p>
+   <p><button type="button" id="SVG">SVG</button></p>
+</div>
+-->
+</div>
+
+
+<!-- Canvas Container -->
+<div class="canvas">
+    <canvas id="myCanvas" width="465" height="500"></canvas>
+</div>
+<div class="figuri">
+     
+     
+</div>
+
+</div>
+
+
+<script src="practice.js"></script>
+</body>
+</html>
