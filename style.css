@@ -71,12 +71,14 @@ body{
 button {
     /*font-size: 20px;*/
     letter-spacing: 1px;
-    border-radius: 15px;
+    border-radius: 1px;
     cursor: pointer;
     background: #86C232;
     color: white;
     text-align: center;
     letter-spacing: 1px;
+    
+    
 
 }
 
@@ -84,6 +86,7 @@ label{
     /*font-size: 20px;*/
     font-weight: 600;
     letter-spacing: 1px;
+    color:white;
 }
 
 input{
@@ -104,6 +107,7 @@ button:hover{
     position: absolute;
     top:  2vh;
     left: 2vw;
+    border-radius: 15px;
 }
 
 #myCanvas{
