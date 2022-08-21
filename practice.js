@@ -1,3 +1,4 @@
+/* ACESTA ESTE UN COMENTARIU DE PROBA */
 /*Referinte butoane pentru feature - uri *******************************************************************************************************/
 const referintaLineWidth = document.getElementById("line_width");
 const referintaLineColor = document.getElementById("line_color");
